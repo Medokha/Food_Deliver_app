@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:food_app/intro.dart';
 import 'package:food_app/reset.dart';
 
 class login extends StatelessWidget {
@@ -61,7 +62,9 @@ class login extends StatelessWidget {
               height: MediaQuery.of(context).size.height * .05,
             ),
             TextButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.pushNamed(context,intro.routname);
+                },
                 child: Container(
                     decoration: BoxDecoration(
                         color: Color.fromRGBO(252, 95, 16, 1.0),

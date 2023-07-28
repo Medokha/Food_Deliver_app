@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:food_app/home.dart';
+import 'package:food_app/intro.dart';
 import 'package:food_app/login.dart';
 import 'package:food_app/massage.dart';
 import 'package:food_app/newpassword.dart';
 import 'package:food_app/reset.dart';
+
+import 'app.dart';
 
 void main() {
   runApp( MyApp());
@@ -23,6 +26,9 @@ class MyApp extends StatelessWidget {
         reset.routname: (context) =>  reset(),
         massage.routname: (context) =>  massage(),
         newpassword.routname: (context) =>  newpassword(),
+        intro.routname: (context) =>  intro(),
+        app.routname: (context) =>  app(),
+
 
 
       },
