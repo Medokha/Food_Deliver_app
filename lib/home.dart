@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:food_app/login.dart';
 
 class home extends StatelessWidget {
   static const String routname = 'home';
@@ -32,7 +33,9 @@ class home extends StatelessWidget {
             height: MediaQuery.of(context).size.height * .1,
           ),
           TextButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.pushNamed(context, login.routname);
+              },
               child: Container(
                   decoration: BoxDecoration(
                       color: Color.fromRGBO(252, 95, 16, 1.0),
